@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useUserList } from "../../hooks/useUser";
 import { Button, CircularProgress } from "@mui/material";
 import ProfileTable from "./components/ProfileTable";

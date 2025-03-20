@@ -40,7 +40,7 @@ const ProfileCreateModal = () => {
   return (
     <Modal open={open} onClose={closeModal}>
       <Box sx={styleModalBox}>
-        {titleFieldArray.map((field) => {
+        {titleFieldArray?.map((field) => {
           const { title, isDatePicker } = field;
           const { key } = field as { key: keyof TUser };
 

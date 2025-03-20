@@ -48,13 +48,13 @@ const ProfileTable = () => {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            {getTitleTable.map((item) => (
+            {getTitleTable?.map((item) => (
               <TableCell align="center">{item}</TableCell>
             ))}
           </TableRow>
         </TableHead>
         <TableBody>
-          {userList.map((user) => (
+          {userList?.map((user) => (
             <TableRow
               key={user.id}
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
